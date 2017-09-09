@@ -1,6 +1,9 @@
 package org.restlesscode.maven;
 
 /*
+ * Copyright statement from original Maven Dependency Tree plugin file
+ * from which this code started: 
+ *
  * Copyright 2001-2005 The Apache Software Foundation.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -31,7 +34,8 @@ import java.io.File;
 import java.io.IOException;
 
 /**
- * Goal which touches a timestamp file.
+ * Goal to analyze dependencies looking for duplicates in the tree. Like 
+ * mvn dependency:tree but just focused on presenting duplicate dependencies
  *
  * @goal find
  * @requiresDependencyResolution test
